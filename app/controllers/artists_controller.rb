@@ -9,6 +9,8 @@ class ArtistsController < ApplicationController
 
   def new
     if Preference.first.allow_create_artists # seems iffy to me --- will review correct solution!
+      #actually close: pref = Preference.first
+    #if pref && !pref.allow_create_artists redirect_to artists_path
       @artist= Artist.new
     else
       redirect_to artists_path
