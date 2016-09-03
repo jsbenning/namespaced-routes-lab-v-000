@@ -1,4 +1,4 @@
-<h1>Edit Preferences</h1>
+<h1>Create Preferences</h1>
 
 <%= form_for @preference  do |f| %>
   <%= f.label :artist_sort_order %>
@@ -17,13 +17,4 @@
   <%= f.submit %>
 <% end %>
 
-<h1>Current Preferences</h1>
 
-<label>Artist Sort Order</label>
-<p><%= artist_sort_order %></p>
-<label>Song Sort Order</label>
-<p><%= song_sort_order %></p>
-<label>Create Artist Allowed?</label>
-<p><%= allow_create_artists %></p>
-<label>Create Songs Allowed?</label>
-<p><%= allow_create_songs %></p>

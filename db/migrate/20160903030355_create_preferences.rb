@@ -10,5 +10,3 @@ class CreatePreferences < ActiveRecord::Migration
     end
   end
 end
-
-
